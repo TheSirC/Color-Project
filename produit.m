@@ -1,14 +1,14 @@
 function [ vecf ] = produit( vecI, vecF)
-% produit Remplace la couleur actuelle par le produit de la couleur passée en paramètre
+% produit Remplace la couleur actuelle par le produit de la couleur passï¿½e en paramï¿½tre
 % avec la couleur actuelle
-% vecI: vecteur codant la couleur à changer (provenant de l'image actuelle
+% vecI: vecteur codant la couleur ï¿½ changer (provenant de l'image actuelle
 % vecF: vecteur codant la couleur de fusion (provenant de l'interaction
 % utilisateur)
-% vecf: vecteur codant la couleur finale 
+% vecf: vecteur codant la couleur finale
 
-vecf = vecF; % Pour éviter des affectations non nécesaires dans la boucle
+vecf = vecF; % Pour ï¿½viter des affectations non nï¿½cesaires dans la boucle
 [i,j,k] = size(vecI);
-parfor a = 1:i
+for a = 1:i
     for b = 1:j
         for c = 1:k
             if (vecF(a,b,c,1)+vecF(a,b,c,2)+vecF(a,b,c,3)==765) % Cas pour du blanc
@@ -23,4 +23,3 @@ parfor a = 1:i
 end
 
 end
-

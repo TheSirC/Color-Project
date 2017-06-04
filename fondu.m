@@ -1,7 +1,7 @@
 function [ vecF ] = fondu( vecI )
-% fondu Remplace la couleur actuelle par la couleur passée en paramètre de
-% manière aléatoire
-% vecI: vecteur codant la couleur à changer
+% fondu Remplace la couleur actuelle par la couleur passï¿½e en paramï¿½tre de
+% maniï¿½re alï¿½atoire
+% vecI: vecteur codant la couleur ï¿½ changer
 % vecF: vecteur codant la couleur de fusion
 
 [i,j,k] = size(vecI);
@@ -16,4 +16,3 @@ parfor a = 1:i
 end
 
 end
-
